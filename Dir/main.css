@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  background-color: #eee;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+.group {
+  color: red;
+}
+
+.drow-section {
+  display: flex;
+  height: 250px;
+}
+
+.drow {
+  flex: 1;
+  display: flex;
+  position: relative;
+  background-color: white;
+}
+
+.drow .til {
+  position: absolute;
+  top: 10px;
+  left: 40%;
+  border: 2px solid #222;
+  height: 80%;
+  display: none;
+}
+.drow .til::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  bottom: -4px;
+  border: #222 solid 2px;
+  width: 100px;
+  height: 0px;
+}
+.drow .til::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -4px;
+  border: #222 solid 2px;
+  width: 100px;
+  height: 0px;
+}
+.drow .til-container {
+  position: absolute;
+  top: 10px;
+  left: 55%;
+  border: #222 2px solid;
+  height: 15%;
+  display: none;
+}
+
+.drow .til-container::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -26px;
+  height: 50px;
+  width: 50px;
+  border: 2px #222 dashed;
+  border-radius: 50%;
+}
+
+.drow .head {
+  position: absolute;
+  top: 20%;
+  left: 52%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px #222 solid;
+  display: none;
+}
+
+.drow .body {
+  position: absolute;
+  top: 36%;
+  left: 55%;
+  height: 90px;
+  border: #222 solid 2px;
+  display: none;
+}
+
+.drow .body::after {
+  content: "";
+  position: absolute;
+  top: 41%;
+  left: 58%;
+  border: #222 solid 2px;
+  width: 15px;
+  transform: skew(10deg, 10deg);
+}
+.drow .body::before {
+  content: "";
+  position: absolute;
+  top: 63%;
+  left: 72%;
+  border: #222 solid 2px;
+  width: 15px;
+  transform: rotate(-196deg);
+  margin: -18px;
+}
+.drow .foot {
+  position: absolute;
+  top: 48%;
+  left: 54%;
+  height: 90px;
+  width: 30px;
+  display: none;
+}
+
+.drow .foot::after {
+  content: "";
+  position: absolute;
+  top: 68%;
+  left: -40%;
+  border: #222 solid 2px;
+  width: 15px;
+  transform: rotate(-24deg);
+}
+.drow .foot::before {
+  content: "";
+  position: absolute;
+  top: 69%;
+  left: 23%;
+  border: #222 solid 2px;
+  width: 15px;
+  transform: rotate(-152deg);
+}
+
+div .litters {
+  flex: 1;
+  text-align: center;
+}
+
+.litters .litter {
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  background-color: #009688;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.reslt {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.letter-box {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: white;
+  color: #222;
+  font-size: 24px;
+  margin-right: 10px;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #222;
+}
+.clicked {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.row.wrong-1 .til {
+  display: block;
+}
+
+.row.wrong-2 .til-container {
+  display: block;
+}
+
+.row.wrong-3 .head {
+  display: block;
+}
+
+.row.wrong-4 .body {
+  display: block;
+}
+
+.row.wrong-5 .foot {
+  display: block;
+}
